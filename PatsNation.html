@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styles/patsnation.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="nav-bar">
+        <a class="ep-logo" href="www.everythingpats.me">
+            <img 
+            src="images/Sports World (1).png" 
+            alt="everythingpats">
+        </a>
+
+        <div class="tabs">
+            <a id="schedule" href="Schedule.html">SCHEDULE</a>
+            &nbsp;&nbsp;
+            <a id="matchups" href="Matchups.html">MATCHUPS</a>
+            &nbsp;&nbsp;
+            <a id="betting" href="Betting.html">BETTING</a>
+            &nbsp;&nbsp;
+            <a id="pats-nation" href="PatsNation.html">PATS NATION</a>
+            &nbsp;&nbsp;
+            <a id= "news-twitter" href="News&Twitter.html">NEWS & TWITTER</a>
+        </div>
+    </div>
+    <br><br><br><br><br>
+    <h2>SIGN UP FOR PATS NATION NEWSLETTER</h2>
+    <form action="https://oim-apis.herokuapp.com/form2" method="post">
+    <fieldset>
+    <legend>Your Information:</legend>
+          <label for="name">Name:</label>
+          <input
+              type="text"
+              id="name"
+              name="Name"
+              placeholder="Enter your name here"
+          />
+        <br><br>
+          <label for="email">Email:</label>
+          <input
+              type="text"
+              id="email"
+              name="Email"
+              placeholder="Enter your email here"
+          />
+          <div>
+            <input type="checkbox" name="email-updates" id="updates"
+            value="updates"
+            checked>
+            <label for="updates">Sign me up for email updates</label>
+        </div> 
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>SETTLE THE QB CONTROVERSY</legend>
+        <div>ZAPPY OR JONES
+            <select name="qb" id="desired-qb">
+                <option value="Jones">Mac Jones</option>
+                <option value="Zappy">Bailey Zappy</option>
+                <option value="Draft">Draft someone else</option>
+            </select>
+            </div>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>THOUGHTS ON THE PATS FOR EVERYTHING PATS FORUM</legend>
+        <div>
+            <label for="comments">Comments:</label>
+            </div>
+            <div>
+            <textarea
+                    id="comments"
+                    name="comments"
+                    rows="5"
+                    cols="25"
+            ></textarea>
+            </div>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>PREDICT PATRIOTS RECORD FOR A CHANCE TO WIN</legend>
+        <div>
+            <label for="">W:</label>
+            </div>
+            <div>
+            <textarea
+                    id="wins"
+                    name=""
+                    rows="1"
+                    cols="1"
+            ></textarea>
+            <br>
+            <label for="wins">L:</label>
+            </div>
+            <div>
+            <textarea
+                    id="wins"
+                    name="wins"
+                    rows="1"
+                    cols="1"
+            ></textarea>
+            </div>
+            <br>
+            <input type="submit" value="Submit" />
+            <input type="reset" value="Reset" />
+    </fieldset>
+    </form>
+    
+</body>
+</html>
