@@ -65,14 +65,20 @@ nav ul li a #logo-img {
   grid-area: 2 / 1 / span 1 / span 6;
 }
 
-.wrapper table, th, td {
-    border:1px solid black;
+  .wrapper h2 {
+    grid-area: 3 / 1 / span 1 / span 2;
+    color: black;
+    font-weight: bold;
+    font-size: 40px;
+  }
+
+  .wrapper form {
+    grid-area: 3 / 3 / span 4 / span 2;
     background-color: white;
-    margin: auto;
-}
+    margin-right: 30px;
+  }
 
-.wrapper table {
-  width: 50%;
-  grid-area: 3 / 1 / span 4 / span 6;
-}
-
+  .wrapper .form {
+    grid-area: 3 / 5 / span 4 / span 2;
+    height: 140px;
+  }

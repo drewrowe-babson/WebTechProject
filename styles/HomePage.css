@@ -1,241 +1,174 @@
-body {
-  font-family: Helvetica;
-  position: relative;
-  margin: 0;
+body{
+  height: 100vh;
+  font-family: sans-serif;
   background-image: url(/images/gillette.jpg);
 }
-#white {
-  color: white;
-  font-size: 75px;
-  font-weight: bold;
-  position: fixed;
-  top: 70px;
-  margin-left: 50px;
-}
-#red {
-  color: red;
-  font-size: 75px;
-  font-weight: bold;
-  position: fixed;
-  top: 150px;
-  margin-left: 50px;
-}
-#white2 {
-  color: white;
-  font-weight: bold;
-  position: fixed;
-  top: 85px;
-  right: 310px;
-}
-#red2 {
-  color: red;
-  font-weight: bold;
-  position: fixed;
-  top: 120px;
-  right: 275px;
-}
-#controversy-article {
-  position: fixed;
-  top: 300px;
-  margin-left: 50px;
-}
-#qb-article {
-  height: 250px;
-  width: auto;
-  border-top: solid 10px white;
-  border-left: solid 10px white;
-  border-right: solid 10px white;
-  border-bottom: solid 70px white ;
-}
-#caption1 {
-  position: fixed;
-  top: 550px;
-  text-align: center;
-  margin-left: 60px;
-  border: solid 1px;
-  padding-right: 8px;
-  padding-left: 5px;
-}
-#score-of-week {
-  position: fixed;
-  top: 300px;
-  left: 480px;
-}
-#score-img {
-  height: 310px;
-  width: auto;
-  border: solid 10px white;
-}
-#week8-highlights {
-  position: fixed;
-  top: 210px;
-  left: 510px;
-  text-align: center;
-  width: 130px;
-  color: white;
-  background-color: red;
-  font-size: 15px;
-  border-radius: 300px;
-  padding-top: 7.5px;
-  padding-bottom: 7.5px;
-  padding-left: 45px;
-  padding-right: 45px;
-  line-height: 1.5;
-  font-weight: bold;
-  text-decoration: none;
-}
-#week8-highlights:hover {
-  background-color: rgb(239, 131, 131);
-}
-div.league-highlights {
+nav ul {
   display: grid;
-  border: solid 10px white;
-  background-color: rgb(1, 1, 30);
-  position: fixed;
-  right: 270px;
-  top: 184px;
-  padding: 5px;
+  grid-template-columns: repeat(6, 1fr);
+  justify-content: center;
+  justify-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
 }
-#highlight1 {
-  height: auto;
-  width: 180px;
-  padding-bottom: 2px;
-}
-#highlight2 {
-  height: auto;
-  width: 180px;
-  padding-bottom: 2px;
-}
-#highlight3 {
-  height: auto;
-  width: 180px;
-  padding-bottom: 2px;
-}
-#highlight4 {
-  height: auto;
-  width: 180px;
-}
-.nav-bar {
-  position: fixed;
-  width: 100%;
-  font-size: 10;
+nav ul li {
   background-color: black;
-  margin-top: 0;
-  overflow: hidden;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  width: 120%;
+  text-align: center;
+  line-height: 100px;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+
+
 }
-img {
-  height: 80px;
-  width: 80px;
-  float: left;
-}
-.tabs {
-  float: right;
-  vertical-align: center;
-  padding-left: 40px;
-  padding-right: 50px;
-  margin-top: 25px;
-  margin-bottom: 10px;
-  color: white;
-  background-color: black;
+nav ul li #reg {
+  text-decoration: none;
+  background: red;
+  border: white solid 2px;
+  border-radius: 300px;
+  padding: 20px;
+  color: white ;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
+  margin-right: 40px;
 }
-#schedule {
-    text-align: center;
-    width: 130px;
-    color: white;
-    background-color: red;
-    font-size: 15px;
-    border-radius: 300px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 45px;
-    padding-right: 45px;
-    line-height: 1.5;
-    font-weight: bold;
-    text-decoration: none;
-    margin-right: 25px;
+nav ul li #reg:hover {
+  background-color: rgb(255, 255, 255);
+  border: red solid 2px;
+  color: red;
 }
-#schedule:hover {
-  background-color: rgb(239, 131, 131);
-}
-#matchups {
-    text-align: center;
-    width: 130px;
-    color: white;
-    background-color: red;
-    font-size: 15px;
-    border-radius: 300px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 45px;
-    padding-right: 45px;
-    line-height: 1.5;
-    font-weight: bold;
-    text-decoration: none;
-    margin-right: 30px;
-}
-#matchups:hover {
-  background-color: rgb(239, 131, 131);
-}
-#betting {
-    text-align: center;
-    width: 130px;
-    color: white;
-    background-color: red;
-    font-size: 15px;
-    border-radius: 300px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 55px;
-    padding-right: 55px;
-    line-height: 1.5;
-    font-weight: bold;
-    text-decoration: none;
-    margin-right: 30px;
-}
-#betting:hover {
-  background-color: rgb(239, 131, 131);
-}
-#pats-nation {
-    text-align: center;
-    width: 130px;
-    color: white;
-    background-color: red;
-    font-size: 15px;
-    border-radius: 300px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 40px;
-    padding-right: 40px;
-    line-height: 1.5;
-    font-weight: bold;
-    text-decoration: none;
-    margin-right: 30px;
-}
-#pats-nation:hover {
-  background-color: rgb(239, 131, 131);
-}
-#news-twitter {
-    text-align: center;
-    width: 130px;
-    color: white;
-    background-color: red;
-    font-size: 15px;
-    border-radius: 300px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 30px;
-    padding-right: 30px;
-    line-height: 1.5;
-    font-weight: bold;
-    text-decoration: none;
-}
-#news-twitter:hover {
-  background-color: rgb(239, 131, 131);
+nav ul li a #logo-img {
+  border-right: 2px solid white;
+  border-left: 2px solid white;
+  float: left;
+  margin-left: 50px;
 }
 
+.wrapper {
+  display: grid;
+  grid-template-rows: 0px 125px 140px 260px 0px;
+  grid-template-columns: repeat(6, 1fr);
+  margin: 0;
+  padding: 0;
+
+
+  width: 100%;
+  height: 100vh;
+}
+.wrapper header {
+  grid-area: 1 / 1 / span 1 / span 6;
+}
+
+.wrapper nav {
+  grid-area: 2 / 1 / span 1 / span 6;
+}
+
+/*STOP HERE*/ 
+
+.wrapper .ep-title {
+  grid-area: 3 / 1 / span 1 / span 2;
+  margin-left: 30px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: white;
+  font-size: 60px;
+}
+
+figcaption {
+  background-color: white;
+  text-align: center;
+  font-size: 15px;
+  width: 70%;
+  margin-left: 48px;
+  padding-right: 12.5px;
+  padding-left: 12.5px;
+}
+
+.wrapper .article {
+  grid-area: 4 / 1 / span 1 / span 2;
+  margin-left: 10px;
+  text-align: center;
+}
+#qb-article {
+  height: 200px;
+  border: 5px white solid;
+  margin-top: 30px;
+  text-decoration: none;
+}
+
+
+
+.wrapper .heading-2 {
+  grid-area: 3 / 4 / span 1 / span 2;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 20px;
+  margin-right: 20px;
+  float: left;
+}
+
+.wrapper .highlight-img {
+  grid-area: 4 / 4 / span 1 / span 2;
+}
+
+#week-13 {
+  border: solid 5px white;
+  margin-top: 30px;
+  margin-left: 15px;
+}
+
+.wrapper .possible {
+  grid-area: 5 / 4 / span 1 / span 2;
+  margin-left: 15px;
+}
+
+iframe {
+  border: white solid 5px;
+
+}
+
+.wrapper .bottom-middle {
+  background-color: red;
+  grid-area: 5 / 4 / span 1 / span 2;
+  margin-bottom: 10px;
+}
+
+.wrapper .league-highlights {
+  grid-area: 3 / 3 / span 1 / span 1;
+  text-decoration: none;
+  background: rgb(1, 1, 44);
+  border-radius: 300px;
+  border: white solid 2px;
+  margin-top: 70px;
+  margin-bottom: 100px;
+  color: red ;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  height: 50px;
+  width: 175px;
+}
+
+.league-highlights {
+  vertical-align: middle;
+  margin-bottom: 5px;
+  padding-top: 10px;
+}
+
+
+.wrapper .twitter-feed {
+  grid-area: 3 / 6 / span 3 / span 1;
+  margin-right: 30px;
+  margin-bottom: 10px;
+}
+
+.wrapper .highlight-reel {
+  grid-area: 4 / 3 / span 2 / span 1;
+  align-content: center;
+  text-align: center;
+  width: 80%;
+}

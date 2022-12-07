@@ -28,12 +28,10 @@ nav ul li #reg {
   border: white solid 2px;
   border-radius: 300px;
   padding: 20px;
-  margin: auto;
   color: white ;
   font-weight: bold;
   font-size: 18px;
   margin-right: 40px;
-  margin-left: -40px;
 }
 nav ul li #reg:hover {
   background-color: rgb(255, 255, 255);
@@ -47,10 +45,11 @@ nav ul li a #logo-img {
   margin-left: 50px;
 }
 
+
 .wrapper {
   display: grid;
-  grid-template-rows: 0px 125px 140px 260px 0px;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 0px 125px 210px 275px 100px;
+  grid-template-columns: repeat(3, 1fr);
   margin: 0;
   padding: 0;
 
@@ -58,21 +57,58 @@ nav ul li a #logo-img {
   height: 100vh;
 }
 .wrapper header {
-  grid-area: 1 / 1 / span 1 / span 6;
+  grid-area: 1 / 1 / span 1 / span 3;
 }
 
 .wrapper nav {
-  grid-area: 2 / 1 / span 1 / span 6;
+  grid-area: 2 / 1 / span 1 / span 3;
 }
 
-.wrapper table, th, td {
-    border:1px solid black;
+
+.wrapper .select {
+    grid-area: 3 / 1 / span 1 / span 1;
+    margin-left: 30px;
+    background-color: rgb(44, 44, 44);
+    color: white;
+    font-weight: bold;
+    border: white 2px solid;
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+#btn1 {
     background-color: white;
-    margin: auto;
+    height: 50px;
+    width: 100px;
+    bottom: 10px;
+  }
+
+#btn2 {
+    background-color: red;
+    height: 50px;
+    width: 100px;
+    grid-area: 3 / 1 / span 1 / span 1;
+  }
+
+#btn3 {
+  background-color: rgb(2, 2, 83);
+  height: 50px;
+    width: 100px;
+    grid-area: 3 / 1 / span 1 / span 1;
 }
 
-.wrapper table {
-  width: 50%;
-  grid-area: 3 / 1 / span 4 / span 6;
+.wrapper .img-1 { 
+  grid-area: 3 / 2 / span 1 / span 1;
+  padding-top: 30px;
+  text-align: center;
 }
 
+.video-1 {
+  grid-area: 3 / 3 / span 1 / span 1;
+  padding-top: 30px;
+}
+
+.video-2 {
+  grid-area: 4 / 3 / span 1 / span 1;
+  padding-top: 60px;
+}

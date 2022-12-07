@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styles/matchups.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" type="image/png" href="images/Sports World (1).png">
+</head>
+<body>
+    <div class="wrapper"> 
+        <header></header> 
+        <nav>
+            <ul>
+                <li>
+                    <a class="logo-img" href="C:\Users\arowe1\Documents\GitHub\WebTechProject\index.html">
+    
+                    <img id="logo-img"
+                        src="images/Sports World (1).png" 
+                        alt="everythingpats"
+                        height="100px"
+                        >
+                    </a>
+                </li>
+                <li>
+                <a id="reg" href="Schedule.html">SCHEDULE</a>
+                </li>
+                <li>
+                <a id="reg" href="Matchups.html">FEATURED</a>
+                </li>
+                <li>
+                <a id="reg" href="News&Twitter.html">NEWS & TWITTER</a>
+                </li>
+                <li>
+                <a id="reg" href="PatsNation.html">CONTACT US</a>
+                </li>
+                <li>
+                <a id="reg" href="sitemap.html">SITEMAP</a>
+                </li>
+            </ul>
+        </nav>  
+
+        
+    <div class="select">PLEASE SELECT A JERSEY COLOR:<br>
+        <button id="btn1"></button>
+        <br>
+        <button id="btn2"></button>
+        <br>
+        <button id="btn3"></button>
+    </div>
+    
+    <div class="img-1">
+    <img 
+    id="img-1" 
+    src="images/m10bluefront.webp" 
+    height="400px"
+    />
+    </div>
+
+    <div class="video-1">
+        <iframe width="350" height="200" src="https://www.youtube.com/embed/vf2K6SnghC4" title="Mac Jones’ triumphant return to the Patriots? Kinda" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <div class="video-2">
+        <iframe width="350" height="200" src="https://www.youtube.com/embed/99cYzkv2Rh0" title="Curran: Mac Jones' performance vs. Jets "100%" enough to build on going forward | NBC Sports Boston" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    
+    
+</body>
+
+
+<script>
+let img = document.getElementById("img-1");
+let btn1 = document.getElementById("btn1");
+let btn2 = document.getElementById("btn2");
+let btn3 = document.getElementById("btn3");
+
+btn1.addEventListener("click", () => {
+   img.src="/images/whitem10front.webp";
+   
+   function setNewImage() {
+    document.getElementById("img-1").src="/images/whitem10back.webp";
+} 
+document.getElementById("img-1").onmouseover = function() {
+    setNewImage();
+}
+function setOldImage() {
+    document.getElementById("img-1").src="/images/whitem10front.webp";
+}
+document.getElementById("img-1").onmouseout = function() {
+    setOldImage();
+}
+})
+
+
+
+btn2.addEventListener("click", () => {
+   img.src="/images/m10redfront.jpg"
+
+   function setNewImage() {
+    document.getElementById("img-1").src="/images/m10redback.jpg";
+} 
+document.getElementById("img-1").onmouseover = function() {
+    setNewImage();
+}
+function setOldImage() {
+    document.getElementById("img-1").src="/images/m10redfront.jpg";
+}
+document.getElementById("img-1").onmouseout = function() {
+    setOldImage();
+}
+})
+
+
+
+btn3.addEventListener("click", () => {
+   img.src="/images/m10bluefront.webp"
+
+   function setNewImage() {
+    document.getElementById("img-1").src="images/m10blueback.webp";
+} 
+document.getElementById("img-1").onmouseover = function() {
+    setNewImage();
+}
+function setOldImage() {
+    document.getElementById("img-1").src="images/m10bluefront.webp";
+}
+document.getElementById("img-1").onmouseout = function() {
+    setOldImage();
+}
+})
+
+
+
+
+</script>
+</html>

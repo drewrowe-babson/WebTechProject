@@ -5,82 +5,109 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="FontAwesome/all.min.css">
     <link rel="stylesheet" href="styles/HomePage.css">
+    <script src="homepage.js"></script>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="shortcut icon" type="image/png" href="images/Sports World (1).png">
 </head>
+
 <body>
-    <div class="nav-bar">
-        <a class="ep-logo" href="www.everythingpats.me">
-            <img 
-            src="images/Sports World (1).png" 
-            alt="everythingpats">
-        </a>
+<div class="wrapper"> 
+    <header></header> 
+    
+    <nav>
+        <ul>
+            <li>
+                <a class="logo-img" href="C:\Users\arowe1\Documents\GitHub\WebTechProject\index.html">
 
-        <div class="tabs">
-            <a id="schedule" href="Schedule.html">SCHEDULE</a>
-            &nbsp;&nbsp;
-            <a id="matchups" href="Matchups.html">MATCHUPS</a>
-            &nbsp;&nbsp;
-            <a id="betting" href="Betting.html">BETTING</a>
-            &nbsp;&nbsp;
-            <a id="pats-nation" href="PatsNation.html">PATS NATION</a>
-            &nbsp;&nbsp;
-            <a id= "news-twitter" href="News&Twitter.html">NEWS & TWITTER</a>
-        </div>
-    </div>
-    <div class="heading">
-        <h1 id="white">EVERYTHING</h1>
-        <h1 id="red">PATRIOTS</h1>
-    </div>
+                <img id="logo-img"
+                    src="images/Sports World (1).png" 
+                    alt="everythingpats"
+                    height="100px"
+                    >
+                </a>
+            </li>
+            <li>
+            <a id="reg" href="Schedule.html">SCHEDULE</a>
+            </li>
+            <li>
+            <a id="reg" href="Matchups.html">FEATURED</a>
+            </li>
+            <li>
+            <a id="reg" href="News&Twitter.html">NEWS & TWITTER</a>
+            </li>
+            <li>
+            <a id="reg" href="PatsNation.html">CONTACT US</a>
+            </li>
+            <li>
+            <a id="reg" href="sitemap.html">SITEMAP</a>
+            </li>
+        </ul>
+    </nav>  
+    
+    <div id="everything-patriots" class="ep-title">EVERYTHING <br> PATRIOTS</div>
 
-    <div id="controversy-article">
+    <div class="article">
         <a href="https://www.nfl.com/news/bill-belichick-indicates-mac-jones-will-start-patriots-jets-bailey-zappe">
-            
-        <img id="qb-article"
+
+            <img id="qb-article"
             src="images/qb-article.jpg"
             alt="qb-article"
+            height="300px"
+    
             />
-        </a>
+            <figcaption id="caption">
+              Around the NFL: Bill Belichick indicates Mac Jones will start vs. Jets, not interested in discussing Pats' QB situation further  
+            </figcaption>
+            </a>  
     </div>
-    <p id="caption1">
-        Around the NFL: Bill Belichick indicates Mac Jones
-        <br>
-        will start vs. Jets, not interested in discussing Pats'
-        <br> 
-        QB situation further
-    </p>
+    
+    <div class="heading-2">WEEK 13 <br> PAT'S HIGHLIGHTS
+    </div>
 
-    <div id="score-of-week">
-        <a href="https://highlights.nfl.com/games/29142-20221030-New-England-Patriots-vs-New-York-Jets.html">
-        
-        <img id="score-img" 
-            src="images/Capture.PNG" 
-            alt="week8-score"
-            />
-        </a>
+    <div class="highlight-img">
+        <img id="week-13"
+            src="images/thumbnail 13.PNG"
+            alt="qb-article"
+            width="350px"
+        />
     </div>
-    <div id="highlight-button">
-        <a href="https://highlights.nfl.com/games/29142-20221030-New-England-Patriots-vs-New-York-Jets.html">
-        <p id="week8-highlights">PATS WEEK 8 <br>HIGHLIGHTS</p>
+
+    <div class="possible">
+        <iframe width="350" height="200" src="https://www.youtube.com/embed/riJ-9jhHEr4" title="Could Tom Brady really return to the Patriots next season? | Pregame Live" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+
+
+    <div class="league-highlights">LEAGUE <br>HIGHLIGHTS</div>
+
+
+    <div class="twitter-feed">
+        <a class="twitter-timeline" data-height="560" data-theme="dark" href="https://twitter.com/Patriots?ref_src=twsrc%5Etfw">Tweets by Patriots</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+
+    
+    <div class="highlight-reel" 
+    
+    id="highlight1"
+    href="https://www.youtube.com/watch?v=XlyKZ2DXx-U">
+    
+    <img id="highlight1"
+    src="images/highlight1.jpg" 
+    alt="high1"
+    />
     </a>
-    </div>
 
-    <div class="league-highlights">
-        <a id="highlight1"
-        href="https://www.youtube.com/watch?v=XlyKZ2DXx-U">
-        <img id="highlight1"
-            src="images/highlight1.jpg" 
-            alt="high1"
-            />
-        </a>
-        <a id="highlight2"
-        href="https://www.youtube.com/watch?v=Emsr7g3J6wA">
+    <a id="highlight2"
+    href="https://www.youtube.com/watch?v=Emsr7g3J6wA">
         <img id="highlight2"
-            src="images/highlight2.jpg" 
-            alt="high2"
-            />
-        </a>
-        <a id="highlight3"
+        src="images/highlight2.jpg" 
+        alt="high2"
+        />
+    </a>
+
+    <a id="highlight3"
         href="https://www.youtube.com/watch?v=vAy-mW6Kg9E">
         <img id="highlight3"
             src="images/highlight3.jpg" 
@@ -90,16 +117,12 @@
         <a id="highlight4"
         href="https://www.youtube.com/watch?v=xMdGq5ovdNw">
         <img id="highlight4"
-            src="images/highlight4.jpg" 
-            alt="high4"
-            />
-        </a>
+        src="images/highlight4.jpg" 
+        alt="high4"
+        />
+    </a>
     </div>
-
-    <div class="league-button">
-        <h1 id="white2">LEAGUE</h1>
-        <h1 id="red2">HIGHLIGHTS</h1>
-    </div>
+</div>
 
 </body>
 </html>

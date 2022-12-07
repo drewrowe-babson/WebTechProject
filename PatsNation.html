@@ -3,81 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="styles/patsnation.css">
+    <link rel="stylesheet" href="styles/pats-nation.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="shortcut icon" type="image/png" href="images/Sports World (1).png">
 </head>
 <body>
-    <div class="nav-bar">
-        <a class="ep-logo" href="www.everythingpats.me">
-            <img 
-            src="images/Sports World (1).png" 
-            alt="everythingpats">
-        </a>
+    <div class="wrapper"> 
+        <header></header> 
+        
+        <nav>
+            <ul>
+                <li>
+                    <a class="logo-img" href="C:\Users\arowe1\Documents\GitHub\WebTechProject\index.html">
+    
+                    <img id="logo-img"
+                        src="images/Sports World (1).png" 
+                        alt="everythingpats"
+                        height="100px"
+                        >
+                    </a>
+                </li>
+                <li>
+                <a id="reg" href="Schedule.html">SCHEDULE</a>
+                </li>
+                <li>
+                <a id="reg" href="Matchups.html">FEATURED</a>
+                </li>
+                <li>
+                <a id="reg" href="News&Twitter.html">NEWS & TWITTER</a>
+                </li>
+                <li>
+                <a id="reg" href="PatsNation.html">CONTACT US</a>
+                </li>
+                <li>
+                <a id="reg" href="sitemap.html">SITEMAP</a>
+                </li>
+            </ul>
+        </nav>  
 
-        <div class="tabs">
-            <a id="schedule" href="Schedule.html">SCHEDULE</a>
-            &nbsp;&nbsp;
-            <a id="matchups" href="Matchups.html">MATCHUPS</a>
-            &nbsp;&nbsp;
-            <a id="betting" href="Betting.html">BETTING</a>
-            &nbsp;&nbsp;
-            <a id="pats-nation" href="PatsNation.html">PATS NATION</a>
-            &nbsp;&nbsp;
-            <a id= "news-twitter" href="News&Twitter.html">NEWS & TWITTER</a>
-        </div>
-    </div>
-    <br><br><br><br><br>
-    <h2>SIGN UP FOR PATS NATION NEWSLETTER</h2>
-    <form action="https://oim-apis.herokuapp.com/form2" method="post">
-    <fieldset>
-    <legend>Your Information:</legend>
-          <label for="name">Name:</label>
-          <input
-              type="text"
-              id="name"
-              name="Name"
-              placeholder="Enter your name here"
-          />
+        <h2>SIGN UP FOR PATS NATION NEWSLETTER</h2>
+
+        <form action="https://oim-apis.herokuapp.com/form2" method="post">
+        <fieldset>
+        <legend>Your Information:</legend>
+            <label for="name">Name:</label>
+            <input
+                type="text"
+                id="name"
+                name="Name"
+                placeholder="Enter your name here"
+            />
         <br><br>
-          <label for="email">Email:</label>
-          <input
-              type="text"
-              id="email"
-              name="Email"
-              placeholder="Enter your email here"
-          />
-          <div>
+            <label for="email">Email:</label>
+            <input
+                type="text"
+                id="email"
+                name="Email"
+                placeholder="Enter your email here"
+            />
+        <div>
             <input type="checkbox" name="email-updates" id="updates"
             value="updates"
             checked>
             <label for="updates">Sign me up for email updates</label>
         </div> 
-    </fieldset>
-    <br>
-    <fieldset>
-        <legend>SETTLE THE QB CONTROVERSY</legend>
-        <div>ZAPPY OR JONES
-            <select name="qb" id="desired-qb">
-                <option value="Jones">Mac Jones</option>
-                <option value="Zappy">Bailey Zappy</option>
-                <option value="Draft">Draft someone else</option>
-            </select>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>SETTLE THE QB CONTROVERSY</legend>
+            <div>ZAPPY OR JONES
+                <select name="qb" id="desired-qb">
+                    <option value="Jones">Mac Jones</option>
+                    <option value="Zappy">Bailey Zappy</option>
+                    <option value="Draft">Draft someone else</option>
+                </select>
             </div>
-    </fieldset>
-    <br>
-    <fieldset>
-        <legend>THOUGHTS ON THE PATS FOR EVERYTHING PATS FORUM</legend>
-        <div>
-            <label for="comments">Comments:</label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>THOUGHTS ON THE PATS FOR EVERYTHING PATS FORUM</legend>
+            <div>
+                <label for="comments">Comments:</label>
             </div>
             <div>
-            <textarea
-                    id="comments"
+                <textarea
+                id="comments"
                     name="comments"
                     rows="5"
-                    cols="25"
-            ></textarea>
+                    cols="25">
+                
+                </textarea>
             </div>
     </fieldset>
     <br>
@@ -109,6 +125,45 @@
             <input type="reset" value="Reset" />
     </fieldset>
     </form>
-    
+
+    <form id="myForm" class="form">
+    <fieldset>
+    <legend>Create EVERYTHING PATRIOTS Account</legend>
+    <div id="error"></div>
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username" >
+<br><br>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password">
+<br><br>
+        <button type="submit">Create</button>
+    </form>
+</fieldset>
+</div>
 </body>
+<script>
+    const name = document.getElementById('username');
+    const password = document.getElementById("password");
+    const form = document.getElementById("myForm");
+    const errorElement = document.getElementById("error");
+
+    form.addEventListener("submit", (e) => {
+        let messages = []
+        if (name.value === "" || name.value == null) {
+            messages.push("Username is required")
+        }
+
+        if (password.value.length <= 6) {
+            messages.push("Password must be longer than 6 characters")
+        }
+
+        if (messages.length > 0) {
+            e.preventDefault();
+            errorElement.innerText = messages.join(", ")
+        }
+       
+    })
+
+
+</script>
 </html>
