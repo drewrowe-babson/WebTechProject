@@ -14,7 +14,7 @@
         <nav>
             <ul>
                 <li>
-                    <a class="logo-img" href="C:\Users\arowe1\Documents\GitHub\WebTechProject\index.html">
+                    <a class="logo-img" href="index.html">
     
                     <img id="logo-img"
                         src="images/Sports World (1).png" 
@@ -40,7 +40,6 @@
                 </li>
             </ul>
         </nav>  
-
         
     <div class="select">PLEASE SELECT A JERSEY COLOR:<br>
         <button id="btn1"></button>
@@ -65,12 +64,38 @@
     <div class="video-2">
         <iframe width="350" height="200" src="https://www.youtube.com/embed/99cYzkv2Rh0" title="Curran: Mac Jones' performance vs. Jets "100%" enough to build on going forward | NBC Sports Boston" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
+
+    <div>
+        <img name="slide" width="350" height="200">
+    </div>
     
     
 </body>
 
 
 <script>
+const i = 0;
+const images = [];
+const time = 1000;
+
+images[0] = "images/MAC.webp";
+images[1] = "images/Mac Jones 102622.jpg";
+images[2] = "images\MAC 2.webp";
+
+function changeImg() {
+    document.slide.src = images[i];
+
+    if(i < images.length - 1){
+        i++;
+    } else { 
+        i = 0;
+    }
+
+    setTimeout("changeImg()", time);
+}
+
+window.onload = changeImg;
+
 let img = document.getElementById("img-1");
 let btn1 = document.getElementById("btn1");
 let btn2 = document.getElementById("btn2");

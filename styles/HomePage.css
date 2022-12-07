@@ -117,13 +117,15 @@ figcaption {
 
 #week-13 {
   border: solid 5px white;
-  margin-top: 30px;
+  margin-top: 0px;
   margin-left: 15px;
+  padding-bottom: 0px;
 }
 
 .wrapper .possible {
   grid-area: 5 / 4 / span 1 / span 2;
   margin-left: 15px;
+  padding-bottom: 40px;
 }
 
 iframe {
@@ -151,6 +153,16 @@ iframe {
   text-align: center;
   height: 50px;
   width: 175px;
+  text-decoration: none;
+}
+#last {
+  text-decoration: none;
+}
+
+.league-highlights:hover {
+  background-color: white;
+  border: rgb(1, 1, 44) solid 2px;
+  color: rgb(1, 1, 44);
 }
 
 .league-highlights {
